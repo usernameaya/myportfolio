@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ball Animation</title>
+    <style>
+        .ball {
+            width: 100px;
+            height: 100px;
+            background: blue;
+            border-radius: 50%;
+            position: fixed;
+            animation: move 8s linear infinite;
+        }
+
+        @keyframes move {
+            0% {
+                top: 0;
+                left: 0;
+            }
+
+            25% {
+                top: 0;
+                left: calc(100% - 100px);
+            }
+
+            50% {
+                top: calc(100% - 100px);
+                left: calc(100% - 100px);
+            }
+
+            75% {
+                top: calc(100% - 100px);
+                left: 0;
+            }
+
+            100% {
+                top: 0;
+                left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ball"></div>
+</body>
+
+</html>
